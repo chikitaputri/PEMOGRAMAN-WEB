@@ -10,7 +10,7 @@ $query_sql = "SELECT * FROM tbl_users
 $result = mysqli_query($conn, $query_sql);
 
 if(mysqli_num_rows($result) > 0){
-    header("Location: index.php");  
+    header("Location: index.html");  
 } else{
     echo "<br><br><br><br><center><h1>Username atau Password Anda Salah</h1>
             <button><strong><a href = 'Foodies Goodies.html'>Login</a></strong></button></center>";
