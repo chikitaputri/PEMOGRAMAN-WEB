@@ -1,16 +1,3 @@
-<?php 
-    session_start(); 
-        if (isset ($_GET['beli']) && is_numeric($_GET['beli'])) { 
-            if (isset ($_SESSION['chart'][$_GET['beli']])){
-                $_SESSION['chart'] [$_GET ['beli']]++;
-        } else { 
-            $_SESSION['chart'] [$_GET['beli']] = 1;
-        }
-    }
-
-?> 
-
-
 <html>
     <head>
         <meta charset = "utf-8">
